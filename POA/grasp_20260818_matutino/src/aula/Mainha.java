@@ -17,6 +17,14 @@ public class Mainha {
 		// entrada de usuario
 		int tipoPagamento = 1; // digitado pelo usuario
 		
+		PagamentoController pCon = new PagamentoController();
+		boolean x = pCon.pagamento(valorCompra, tipoPagamento );
+		if (x) {
+			System.out.println("Pagamento realizado");
+		}else {
+			System.out.println("Erro ao processar pagamento");
+		}
+		/*
 		Pagamento p = null;
 		switch (tipoPagamento) {
 		case 1 : p = new PagamentoCredito(); break;
@@ -24,6 +32,7 @@ public class Mainha {
 		default : p = new PagamentoDinheiro(); 
 		}
 		p.pagar(o.getTotal());
+		*/
 		
 		
 	}
