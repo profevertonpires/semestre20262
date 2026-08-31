@@ -3,6 +3,8 @@ package aula;
 import java.util.ArrayList;
 import java.util.List;
 
+import aula.service.OrdemService;
+
 public class Order {
 
 	public List<Item> itens = null;
@@ -30,5 +32,11 @@ public class Order {
 			total += item.getPreco();
 		}
 		return total;
+	}
+	
+	public boolean salvar() {
+		OrdemService ordemService = new OrdemService();
+		return ordemService.salvar(itens);
+		
 	}
 }
