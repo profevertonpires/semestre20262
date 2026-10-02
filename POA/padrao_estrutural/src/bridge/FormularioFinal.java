@@ -1,5 +1,6 @@
-  package bridge;
-public class FormularioFinal extends Formulario{
+package bridge;
+public class FormularioFinal extends Formulario {
+	
 	protected FormularioFinal(Janela janela) {
 		super(janela);
 	}

@@ -1,8 +1,8 @@
 package adapter;
 public class PixGenericoItau implements PixGenerico{
+	private ItauPix pix = new ItauPix();
 	@Override
 	public void pixFeliz(double valor) {
-		ItauPix pix = new ItauPix();
 		pix.vaiPix(valor, 0);
 	}
 }

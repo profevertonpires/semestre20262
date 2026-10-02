@@ -1,5 +1,4 @@
 package bridge;
-
 public class JanelaWindows implements Janela{
 	@Override
 	public void desenhar() {
