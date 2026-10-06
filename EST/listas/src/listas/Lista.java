@@ -11,12 +11,10 @@ public class Lista {
 			primeiro =novoNo;
 		}
 		
-		if (ultimo ==null ) {
-			ultimo =novoNo;	
-		}else {
+		if (ultimo !=null ) {
 			ultimo.proximo = novoNo;
-			ultimo  = novoNo;
 		}
+		ultimo  = novoNo;
 	}
 	
 	public void listar() {
@@ -27,6 +25,18 @@ public class Lista {
 				noAtual = noAtual.proximo;
 			}
 		}
+	}
+	
+	public int total() {
+		int qtd = 0;
+		if (primeiro !=null) {
+			No noAtual = primeiro;
+			while (noAtual !=null) {
+				qtd++;
+				noAtual = noAtual.proximo;
+			}
+		}
+		return qtd;
 	}
 
 	
