@@ -1,6 +1,6 @@
 package proxy;
 
-public class Pessoa  implements PessoaProxy{
+public class Pessoa implements PessoaProxy{
 	private String id;
 	private String nome;
 	private String telefone;
@@ -14,6 +14,10 @@ public class Pessoa  implements PessoaProxy{
 	private String soPraConstar;
 	private String naoSei;
 	private String praComporEspaco;
+	private String seya;
+	private String shiryu;
+	private String saori;
+	private String ikky;
 	
 	public String getId() {
 		return id;
@@ -92,5 +96,29 @@ public class Pessoa  implements PessoaProxy{
 	}
 	public void setPraComporEspaco(String praComporEspaco) {
 		this.praComporEspaco = praComporEspaco;
+	}
+	public String getSeya() {
+		return seya;
+	}
+	public void setSeya(String seya) {
+		this.seya = seya;
+	}
+	public String getShiryu() {
+		return shiryu;
+	}
+	public void setShiryu(String shiryu) {
+		this.shiryu = shiryu;
+	}
+	public String getSaori() {
+		return saori;
+	}
+	public void setSaori(String saori) {
+		this.saori = saori;
+	}
+	public String getIkky() {
+		return ikky;
+	}
+	public void setIkky(String ikky) {
+		this.ikky = ikky;
 	}
 }
