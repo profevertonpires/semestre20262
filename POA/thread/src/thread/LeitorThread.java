@@ -8,10 +8,10 @@ public class LeitorThread extends Thread {
 	
 	public void run() {contarNumero();}
 	
-	private synchronized void contarNumero() {
+	private  void contarNumero() {
 		for (int i = 0; i < 1000; i++) {
 			try {
-				contador.incremento(); Thread.sleep(1000);
+				contador.incremento(); Thread.sleep(500);
 			} catch (Exception e) {e.printStackTrace();}
 		}
 	}
